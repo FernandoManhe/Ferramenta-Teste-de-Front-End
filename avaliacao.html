@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ferramenta Teste Front-End</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <main class="mainlogo">
+        <img class="logo" src="logo.png">
+    </main>
+
+    <main class="pesquisa">
+        <div>
+            <h1> Avaliação / Conclusão </h1>
+        </div>
+    </main>
+    <main class="mainbotao">
+        <div>
+            <button>
+                <a href="index.html">Início</a>
+            </button>
+        </div>
+
+        <div>
+            <button>
+                <a href="instrucao.html">  Conteúdo </a>
+            </button>
+        </div>
+
+        <div>
+            <button>
+                <a href="planejamento.html"> Teste </a>
+            </button>
+        </div>
+    </main>
+</header>
+
+<section>
+    <br>
+    <form id="formCadastro">
+        <b> Equipe Envolvida </b>
+        <input type="text" id="txtEnvolvida" required placeholder="&nbsp; - Informe a equipe que realizou os testes">
+        <br> <br>
+        <b> Quantidade de testes </b>
+        <input type="text" id="txtQuantidade" required placeholder="&nbsp; - Informe a quantidade de testes realizados">
+        <br> <br>
+        <b> Quantidade de testes (Negativa ou Positiva) </b>
+        <input type="text" id="txtQuantidadeNP" required placeholder="&nbsp; - Informe a quantidade de testes com sucesso e mal sucedidos">
+        <br> <br>
+        <b> Conclusão Geral </b>
+        <input class="conclusao" type="text" id="txtConclusao" required placeholder="&nbsp; - Informe a conclusão geral da equipe quanto aos testes efetuados">
+        <br> <br>
+        <button type="button" onclick="preencheObjetooo()">Adicionar Conclusão</button>
+    </form>
+</section>
+
+<br>
+
+<section class="section2">
+    <br>
+    <button onclick="mostrarConclusao()">Mostrar Conclusão</button>
+    <br>
+    <label id="lblMostrarConclusao">...</label>
+    <br>
+</section>
+
+<div>
+    <button class="botaoDois">
+        <a href="index.html"> --- Home --- </a>
+    </button>
+</div>
+
+<br>
+
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <p class="footer-links">
+            <a href="#">Fale conosco</a> |
+            <a href="#">Integridade</a> |
+            <a href="#">Para você</a> |
+            <a href="#">Noticias</a>
+        </p>
+        <p class="footer-company-name">Copyright © 2023
+            <strong>Fernando Manhe</strong>
+            CodeGuardians</p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Rua Tenente José Joaquim, 1512 ,São Sebastião Do Paraiso</span></p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+55 3599110-1455</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="senaissparaiso@fiemg.com.br">CodeGuardians@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>QUEM SOMOS</span>
+            <strong>Somos a CodeGuardians a maior e melhor empresa de Front-End da atualidade. Representamos, há
+                10 anos, o setor de teste de software de usuários que desejam realiza-los. </strong>
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/" target="_blank"><img class="iconeIMG" src="facebook.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="iconeIMG" src="instagram.png"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="iconeIMG" src="whatsapp.png"></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

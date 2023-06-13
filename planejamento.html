@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ferramenta Teste Front-End</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <main class="mainlogo">
+            <img class="logo" src="logo.png">
+        </main>
+
+        <main class="pesquisa">
+            <div>
+                <h1>Planejamento</h1>
+            </div>
+        </main>
+        <main class="mainbotao">
+            <div>
+                <button>
+                    <a href="index.html">Início</a>
+                </button>
+            </div>
+
+            <div>
+                <button>
+                    <a href="instrucao.html">Conteúdo</a>
+                </button>
+            </div>
+
+            <div>
+                <button>
+                    <a href="planejamento.html">Teste</a>
+                </button>
+            </div>
+        </main>
+    </header>
+
+    <section>
+        <br>
+        <form id="formCadastro">
+            <b>Modelo</b>
+            <input type="text" id="txtModelo" required placeholder="&nbsp; - Informe o software a ser testado / Ex: Trello.com">
+            <br> <br>
+            <b>Introdução</b>
+            <input type="text" id="txtIntroducao" required placeholder="&nbsp; - Resumo sobre o sistema, aplicativo ou produto e funcionalidade">
+            <br> <br>
+            <b>Objetivos</b>
+            <input type="text" id="txtObjetivos" required placeholder="&nbsp; - Descrição dos objetivos que espera alcançar com os testes">
+            <br> <br>
+            <b>Estratégias de Teste</b>
+            <input type="text" id="txtEstrategia" required placeholder="&nbsp; - Técnicas e estratégias utilizadas para a realização dos testes">
+            <br> <br>
+            <b>Equipe</b>
+            <input type="text" id="txtEquipe" required placeholder="&nbsp; - Descrição da equipe envolvida no teste a ser realizado">
+            <br> <br>
+            <b>Cronograma</b>
+            <input type="text" id="txtCronograma" required placeholder="&nbsp; - Data para a entrega do projeto">
+            <br> <br>
+            <button type="button" onclick="preencheObjetoo()">Adicionar Planejamento</button>
+        </form>
+    </section>
+    <br>
+    <section class="section2">
+        <br>
+        <button onclick="mostrarPlanejamento()">Mostrar Planejamentos</button>
+        <br>
+        <label id="lblMostrarPlanejamento">...</label>
+        <br>
+    </section>
+    <div>
+        <button class="botaoDois">
+            <a href="conteudo.html">--- Iniciar Elaboração---</a>
+        </button>
+    </div>
+    <br>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="#">Fale conosco</a> |
+                <a href="#">Integridade</a> |
+                <a href="#">Para você</a> |
+                <a href="#">Noticias</a>
+            </p>
+            <p class="footer-company-name">Copyright © 2023
+                <strong>Fernando Manhe</strong>
+                CodeGuardians</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Rua Tenente José Joaquim, 1512 ,São Sebastião Do Paraiso</span></p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+55 3599110-1455</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="senaissparaiso@fiemg.com.br">CodeGuardians@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>QUEM SOMOS</span>
+                <strong>Somos a CodeGuardians a maior e melhor empresa de Front-End da atualidade. Representamos, há
+                    10 anos, o setor de teste de software de usuários que desejam realiza-los. </strong>
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/" target="_blank"><img class="iconeIMG" src="facebook.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="iconeIMG" src="instagram.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img class="iconeIMG" src="whatsapp.png"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
